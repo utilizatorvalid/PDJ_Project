@@ -1,0 +1,938 @@
+﻿Log file open, 05/04/17 22:16:57
+LogInit:Display: Running engine for game: proiect_escape_room
+LogPlatformFile: Not using cached read wrapper
+LogInit:Display: RandInit(-485471766) SRandInit(-485471766).
+LogTaskGraph: Started task graph with 5 named threads and 6 total threads with 1 sets of task threads.
+LogStats: Stats thread started at 0.058191
+LogInit: Using libcurl 7.47.1
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.0.2g
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = false  - Libcurl will NOT verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit: Build: ++UE4+Release-4.15-CL-3299760
+LogInit: Engine Version: 4.15.0-3299760+++UE4+Release-4.15
+LogInit: Compatible Engine Version: 4.15.0-3299760+++UE4+Release-4.15
+LogInit: Net CL: 3299760
+LogDevObjectVersion: Number of dev versions registered: 14
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 8
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 2
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 14
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 22
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 0
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 12
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 3
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 0
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogInit: Compiled (64-bit): Feb 14 2017 02:04:14
+LogInit: Compiled with Visual C++: 19.00.23026.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.15
+LogInit: Command line: -EpicPortal 
+LogInit: Base directory: C:/Program Files/Epic Games/UE_4.15/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2017.05.04-19.16.58:923][  0]LogInit: Selected Device Profile: [Windows]
+[2017.05.04-19.16.58:923][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2017.05.04-19.16.58:966][  0]LogInit: Computer: DORIN
+[2017.05.04-19.16.58:966][  0]LogInit: User: doiser0
+[2017.05.04-19.16.58:966][  0]LogInit: CPU Page size=65536, Cores=2
+[2017.05.04-19.16.58:966][  0]LogInit: High frequency timer resolution =2.533208 MHz
+[2017.05.04-19.16.58:967][  0]LogMemory: Memory total: Physical=3.9GB (4GB approx)
+[2017.05.04-19.16.58:967][  0]LogMemory: Platform Memory Stats for Windows
+[2017.05.04-19.16.58:967][  0]LogMemory: Process Physical Memory: 260.92 MB used, 260.92 MB peak
+[2017.05.04-19.16.58:967][  0]LogMemory: Process Virtual Memory: 262.43 MB used, 262.43 MB peak
+[2017.05.04-19.16.58:967][  0]LogMemory: Physical Memory: 2712.41 MB used,  1278.94 MB free, 3991.36 MB total
+[2017.05.04-19.16.58:967][  0]LogMemory: Virtual Memory: 625.28 MB used,  1278.94 MB free, 134217728.00 MB total
+[2017.05.04-19.16.59:045][  0]LogTextLocalizationManager: No specific translations for ('en-US') exist, so ('en') translations will be used.
+[2017.05.04-19.16.59:741][  0]LogD3D11RHI: D3D11 adapters:
+[2017.05.04-19.16.59:787][  0]LogD3D11RHI:    0. 'NVIDIA GeForce 840M' (Feature Level 11_0)
+[2017.05.04-19.16.59:787][  0]LogD3D11RHI:       1992/0/1995 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
+[2017.05.04-19.16.59:806][  0]LogD3D11RHI:    1. 'NVIDIA GeForce 840M' (Feature Level 11_0)
+[2017.05.04-19.16.59:806][  0]LogD3D11RHI:       1992/0/1995 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x10de
+[2017.05.04-19.16.59:807][  0]LogD3D11RHI:    2. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2017.05.04-19.16.59:807][  0]LogD3D11RHI:       1992/0/1995 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2017.05.04-19.16.59:807][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2017.05.04-19.16.59:811][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2017.05.04-19.16.59:811][  0]LogD3D11RHI:     GPU DeviceId: 0x1341 (for the marketing name, search the web for "GPU Device Id")
+[2017.05.04-19.16.59:811][  0]LogWindows: EnumDisplayDevices:
+[2017.05.04-19.16.59:811][  0]LogWindows:    0. 'Intel(R) HD Graphics 4600' (P:1 D:1)
+[2017.05.04-19.16.59:811][  0]LogWindows:    1. 'Intel(R) HD Graphics 4600' (P:0 D:0)
+[2017.05.04-19.16.59:811][  0]LogWindows:    2. 'Intel(R) HD Graphics 4600' (P:0 D:0)
+[2017.05.04-19.16.59:811][  0]LogWindows:    3. 'NVIDIA GeForce 840M' (P:0 D:0)
+[2017.05.04-19.16.59:811][  0]LogWindows: DebugString: PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter 
+[2017.05.04-19.16.59:811][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce 840M
+[2017.05.04-19.16.59:811][  0]LogD3D11RHI:   Driver Version: 353.82 (internal:10.18.13.5382, unified:353.82)
+[2017.05.04-19.16.59:811][  0]LogD3D11RHI:      Driver Date: 8-7-2015
+[2017.05.04-19.16.59:811][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2017.05.04-19.16.59:832][  0]LogD3D11RHI: NvAPI_D3D_GetCurrentSLIState failed: 0xfffffff7
+[2017.05.04-19.16.59:832][  0]LogD3D11RHI: Async texture creation enabled
+[2017.05.04-19.16.59:850][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 2)
+[2017.05.04-19.16.59:851][  0]LogShaderCompilers: Guid format shader working directory is -28 characters bigger than the processId version (../../../../../../Users/doiser0/Documents/Unreal Projects/proiect_escape_room/Intermediate/Shaders/WorkingDirectory/940/).
+[2017.05.04-19.16.59:851][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/doiser0/AppData/Local/Temp/UnrealShaderWorkingDir/48C634824CC37224AC3E4C95FBCF4713/'.
+[2017.05.04-19.16.59:851][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2017.05.04-19.17.01:198][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2017.05.04-19.17.01:298][  0]LogTemp:Display: Loaded TP MacClientTargetPlatform
+[2017.05.04-19.17.01:354][  0]LogTemp:Display: Loaded TP MacNoEditorTargetPlatform
+[2017.05.04-19.17.01:412][  0]LogTemp:Display: Loaded TP MacServerTargetPlatform
+[2017.05.04-19.17.01:470][  0]LogTemp:Display: Loaded TP MacTargetPlatform
+[2017.05.04-19.17.01:527][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2017.05.04-19.17.01:585][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2017.05.04-19.17.01:692][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2017.05.04-19.17.01:750][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2017.05.04-19.17.01:825][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2017.05.04-19.17.01:887][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2017.05.04-19.17.01:943][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2017.05.04-19.17.02:001][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2017.05.04-19.17.02:055][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2017.05.04-19.17.02:109][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2017.05.04-19.17.02:219][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2017.05.04-19.17.02:219][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2017.05.04-19.17.02:256][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2017.05.04-19.17.02:363][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2017.05.04-19.17.02:402][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2017.05.04-19.17.02:471][  0]LogTemp:Display: Loaded TP LinuxClientTargetPlatform
+[2017.05.04-19.17.02:718][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2017.05.04-19.17.02:807][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2017.05.04-19.17.02:873][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2017.05.04-19.17.02:873][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2017.05.04-19.17.03:370][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2017.05.04-19.17.03:438][  0]LogDerivedDataCache: Loaded boot cache 0.07s 50MB C:/Users/doiser0/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc.
+[2017.05.04-19.17.03:438][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/doiser0/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc
+[2017.05.04-19.17.03:438][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/doiser0/Documents/Unreal Projects/proiect_escape_room/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2017.05.04-19.17.03:438][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2017.05.04-19.17.03:440][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/doiser0/Documents/Unreal Projects/proiect_escape_room/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2017.05.04-19.17.03:440][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2017.05.04-19.17.03:462][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2017.05.04-19.17.03:474][  0]LogDerivedDataCache: Using Local data cache path C:/Users/doiser0/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2017.05.04-19.17.03:484][  0]LogSlate: Using Freetype 2.6.0
+[2017.05.04-19.17.03:485][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.05.04-19.17.03:485][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.05.04-19.17.03:756][  0]LogInit: Selected Device Profile: [Windows]
+[2017.05.04-19.17.03:759][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2017.05.04-19.17.03:975][  0]LogMeshUtilities: Using QuadricMeshReduction for automatic static mesh reduction
+[2017.05.04-19.17.04:016][  0]LogSimplygon: Simplygon DLL not present - disabling.
+[2017.05.04-19.17.04:057][  0]LogMeshUtilities: Using SimplygonSwarm for distributed automatic mesh merging
+[2017.05.04-19.17.04:057][  0]LogMeshUtilities: No automatic skeletal mesh reduction module available
+[2017.05.04-19.17.04:057][  0]LogMeshUtilities: No automatic mesh merging module available
+[2017.05.04-19.17.04:716][  0]LogNetVersion: GetLocalNetworkVersion: CL: 3299760, ProjectName: proiect_escape_room, ProjectVersion: , EngineNetworkVersion: 2, GameNetworkVersion: 0, NetworkChecksum: 4156821672
+[2017.05.04-19.17.04:762][  0]LogAssetRegistry: FAssetRegistry took 0.0219 seconds to start up
+[2017.05.04-19.17.05:060][  0]LogPackageLocalizationCache: Processed 3 localized package path(s) for 2 prioritized culture(s) in 0.272723 seconds
+[2017.05.04-19.17.05:078][  0]LogUObjectArray: 32475 objects as part of root set at end of initial load.
+[2017.05.04-19.17.05:078][  0]LogUObjectAllocator: 7073360 out of 0 bytes used by permanent object pool.
+[2017.05.04-19.17.05:078][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2017.05.04-19.17.05:190][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2017.05.04-19.17.06:944][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2017.05.04-19.17.06:983][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2017.05.04-19.17.07:444][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2017.05.04-19.17.07:857][  0]SourceControl: Info Source control is disabled
+[2017.05.04-19.17.07:889][  0]SourceControl: Info Source control is disabled
+[2017.05.04-19.17.07:938][  0]SourceControl: Info Source control is disabled
+[2017.05.04-19.17.07:981][  0]SourceControl: Info Source control is disabled
+[2017.05.04-19.17.09:574][  0]LogEngine: Initializing Engine...
+[2017.05.04-19.17.09:574][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2017.05.04-19.17.09:903][  0]LogAIModule: Creating AISystem for world Untitled
+[2017.05.04-19.17.09:915][  0]LogInit: XAudio2 using 'Headphones (CSR8645)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2017.05.04-19.17.09:925][  0]LogInit: FAudioDevice initialized.
+[2017.05.04-19.17.09:963][  0]LogDerivedDataCache: Saved boot cache 0.04s 50MB C:/Users/doiser0/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc.
+[2017.05.04-19.17.09:975][  0]LogInit: Texture streaming: Enabled
+[2017.05.04-19.17.10:072][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2017.05.04-19.17.10:220][  0]LogInit: Transaction tracking system initialized
+[2017.05.04-19.17.10:619][  0]BlueprintLog: New page: Editor Load
+[2017.05.04-19.17.11:655][  0]LocalizationService: Info Localization service is disabled
+[2017.05.04-19.17.12:438][  0]LogConsoleResponse:Display: 
+[2017.05.04-19.17.12:740][  0]LogCook:Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2017.05.04-19.17.12:740][  0]LogCook:Display: Mobile HDR setting 1
+[2017.05.04-19.17.13:856][  0]LogFileCache: Scanning file cache for directory 'C:/Users/doiser0/Documents/Unreal Projects/proiect_escape_room/Content/' took 0.02s
+[2017.05.04-19.17.13:916][  0]SourceControl: Info Source control is disabled
+[2017.05.04-19.17.13:916][  0]Cmd: MAP LOAD FILE="../../../../../../Users/doiser0/Documents/Unreal Projects/proiect_escape_room/Content/ThirdPersonBP/Maps/ThirdPersonExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2017.05.04-19.17.13:916][  0]LightingResults: New page: Lighting Build
+[2017.05.04-19.17.13:955][  0]MapCheck: New page: Map Check
+[2017.05.04-19.17.13:955][  0]LightingResults: New page: Lighting Build
+[2017.05.04-19.17.17:229][  0]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2017.05.04-19.17.17:461][  0]LogEditorServer: Finished looking for orphan Actors (0.001 secs)
+[2017.05.04-19.17.17:475][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2017.05.04-19.17.17:604][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 129.407ms to complete.
+[2017.05.04-19.17.17:604][  0]LogFileHelpers: Loading map 'ThirdPersonExampleMap' took 3.688
+[2017.05.04-19.17.18:274][  0]LogCollectionManager: Loaded 0 collections in 0.011451 seconds
+[2017.05.04-19.17.18:415][  0]LogFileCache: Scanning file cache for directory 'C:/Users/doiser0/Documents/Unreal Projects/proiect_escape_room/Saved/Collections/' took 0.01s
+[2017.05.04-19.17.18:415][  0]LogFileCache: Scanning file cache for directory 'C:/Users/doiser0/Documents/Unreal Projects/proiect_escape_room/Content/Developers/doiser0/Collections/' took 0.01s
+[2017.05.04-19.17.18:415][  0]LogFileCache: Scanning file cache for directory 'C:/Users/doiser0/Documents/Unreal Projects/proiect_escape_room/Content/Collections/' took 0.01s
+[2017.05.04-19.17.18:415][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000002 seconds
+[2017.05.04-19.17.18:427][  0]LogContentBrowser: Native class hierarchy populated in 0.0099 seconds. Added 2244 classes and 450 folders.
+[2017.05.04-19.17.18:444][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2017.05.04-19.17.18:452][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2017.05.04-19.17.18:530][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0005 seconds. Added 0 classes and 0 folders.
+[2017.05.04-19.17.19:466][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0013 seconds. Added 0 classes and 0 folders.
+[2017.05.04-19.17.19:624][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0007 seconds. Added 1 classes and 2 folders.
+[2017.05.04-19.17.20:141][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2017.05.04-19.17.20:188][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2017.05.04-19.17.20:302][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0008 seconds. Added 1 classes and 2 folders.
+[2017.05.04-19.17.20:302][  0]LogLoad: (Engine Initialization) Total time: 24.13 seconds
+[2017.05.04-19.17.20:302][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.39 seconds
+[2017.05.04-19.17.20:302][  0]LogExternalProfiler: Found external profiler: VSPerf
+[2017.05.04-19.17.20:302][  0]LogExternalProfiler: Using external profiler: VSPerf
+[2017.05.04-19.17.20:320][  0]LogOcInput: OculusInput pre-init called
+[2017.05.04-19.17.20:382][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2017.05.04-19.17.20:383][  0]LogSlate: Took 0.000190 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2017.05.04-19.17.20:387][  0]LogSlate: Took 0.000310 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2017.05.04-19.17.20:419][  0]LogSlate: Took 0.016357 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2017.05.04-19.17.21:119][  0]LogRenderer: Reallocating scene render targets to support 856x372 NumSamples 1 (Frame:2).
+[2017.05.04-19.17.21:962][  1]LogSlate: Took 0.021063 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.05.04-19.17.22:097][  2]LogSlate: Took 0.000220 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.05.04-19.17.22:199][  3]LogAssetRegistry: Asset discovery search completed in 17.4593 seconds
+[2017.05.04-19.17.22:199][  3]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000007 seconds (found 0 objects)
+[2017.05.04-19.17.22:199][  3]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000024 seconds (updated 0 objects)
+[2017.05.04-19.20.29:655][ 22]LogSlate: Took 0.000260 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.05.04-19.20.30:653][ 22]LogSlate: Took 0.000203 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2017.05.04-19.20.31:285][ 22]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0009 seconds. Added 112 classes and 0 folders.
+[2017.05.04-19.20.32:992][ 22]LogSlate: Took 0.017194 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2017.05.04-19.22.50:091][411]BlueprintLog: New page: Compile Bp_levelTransition
+[2017.05.04-19.22.50:157][411]LogBlueprint:Error: [Compiler Bp_levelTransition] Error Spawn node  Create Widget  must have a class specified.
+[2017.05.04-19.22.50:459][411]BlueprintEditorCompileResults:Error: Error Spawn node  Create Widget  must have a class specified.
+[2017.05.04-19.22.50:460][411]LogBlueprint:Warning: [Compiler Bp_levelTransition] Warning [0354.29] Compile of Bp_levelTransition failed. 1 Fatal Issue(s) 0 Warning(s) [in 368 ms] (/Game/ThirdPersonBP/Bp_levelTransition.Bp_levelTransition)
+[2017.05.04-19.23.37:736][179]BlueprintLog: New page: Compile Bp_levelTransition
+[2017.05.04-19.23.39:334][242]LogSavePackage: Save=184.32ms
+[2017.05.04-19.23.39:335][242]LogSavePackage: Moving '../../../../../../Users/doiser0/Documents/Unreal Projects/proiect_escape_room/Saved/Bp_levelTransition056C19934074B48EFE87D28FC98920FF.tmp' to '../../../../../../Users/doiser0/Documents/Unreal Projects/proiect_escape_room/Content/ThirdPersonBP/Bp_levelTransition.uasset'
+[2017.05.04-19.23.39:344][242]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/doiser0/Documents/Unreal Projects/proiect_escape_room/Content/ThirdPersonBP/Bp_levelTransition.uasset
+[2017.05.04-19.23.40:795][327]LogTemp: Repeting last play command: Selected Viewport
+[2017.05.04-19.23.40:815][327]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2017.05.04-19.23.40:815][327]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.05.04-19.23.40:880][327]PIE: New page: PIE session: ThirdPersonExampleMap (May 5, 2017, 1:23:40 AM)
+[2017.05.04-19.23.40:909][327]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap
+[2017.05.04-19.23.40:959][327]LogPlayLevel: PIE: StaticDuplicateObject took: (0.050312s)
+[2017.05.04-19.23.40:961][327]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2017.05.04-19.23.40:961][327]LogPlayLevel: PIE: World Init took: (0.001956s)
+[2017.05.04-19.23.40:961][327]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap to /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap (0.081993s)
+[2017.05.04-19.23.41:027][327]LogInit: XAudio2 using 'Headphones (CSR8645)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2017.05.04-19.23.41:032][327]LogInit: FAudioDevice initialized.
+[2017.05.04-19.23.41:150][327]LogLoad: Game class is 'ThirdPersonGameMode_C'
+[2017.05.04-19.23.41:189][327]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap up for play (max tick rate 60) at 2017.05.04-22.23.41
+[2017.05.04-19.23.41:209][327]LogWorld: Bringing up level for play took: 0.022207
+[2017.05.04-19.23.41:296][327]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0007 seconds. Added 11 classes and 0 folders.
+[2017.05.04-19.23.41:312][327]PIE: Info Play in editor start time for /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap 0.12
+[2017.05.04-19.23.41:318][327]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2017.05.04-19.23.41:421][327]LogRenderer: Reallocating scene render targets to support 1292x756 NumSamples 1 (Frame:1389).
+[2017.05.04-19.23.51:823][679]LogBlueprintUserMessages: [ThirdPersonCharacter_167] 0
+[2017.05.04-19.23.52:262][694]LogBlueprintUserMessages: [ThirdPersonCharacter_167] 0
+[2017.05.04-19.23.59:708][942]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2017.05.04-19.23.59:844][942]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2017.05.04-19.24.09:293][494]BlueprintLog: New page: Compile Bp_levelTransition
+[2017.05.04-19.24.10:509][558]LogTemp: Repeting last play command: Selected Viewport
+[2017.05.04-19.24.10:524][558]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2017.05.04-19.24.10:524][558]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.05.04-19.24.10:524][558]PIE: New page: PIE session: ThirdPersonExampleMap (May 5, 2017, 1:24:10 AM)
+[2017.05.04-19.24.10:524][558]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap
+[2017.05.04-19.24.10:553][558]LogPlayLevel: PIE: StaticDuplicateObject took: (0.028873s)
+[2017.05.04-19.24.10:554][558]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2017.05.04-19.24.10:554][558]LogPlayLevel: PIE: World Init took: (0.001250s)
+[2017.05.04-19.24.10:554][558]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap to /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap (0.030494s)
+[2017.05.04-19.24.10:596][558]LogInit: XAudio2 using 'Headphones (CSR8645)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2017.05.04-19.24.10:601][558]LogInit: FAudioDevice initialized.
+[2017.05.04-19.24.10:642][558]LogLoad: Game class is 'ThirdPersonGameMode_C'
+[2017.05.04-19.24.10:645][558]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap up for play (max tick rate 60) at 2017.05.04-22.24.10
+[2017.05.04-19.24.10:645][558]LogWorld: Bringing up level for play took: 0.002694
+[2017.05.04-19.24.10:649][558]PIE: Info Play in editor start time for /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap -0.544
+[2017.05.04-19.24.10:649][558]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2017.05.04-19.24.13:279][640]LogBlueprintUserMessages: [Bp_levelTransition_206] You don't have enough keys!
+[2017.05.04-19.24.18:625][824]LogBlueprintUserMessages: [Bp_levelTransition_206] You don't have enough keys!
+[2017.05.04-19.24.19:584][857]LogBlueprintUserMessages: [Bp_levelTransition_206] You don't have enough keys!
+[2017.05.04-19.24.23:728][996]LogNet: Browse: /Game/ThirdPersonBP/Test1
+[2017.05.04-19.24.23:728][996]LogLoad: LoadMap: /Game/ThirdPersonBP/Test1
+[2017.05.04-19.24.23:812][996]Cmd: MEM
+[2017.05.04-19.24.23:962][996]LogMemory: Platform Memory Stats for Windows
+[2017.05.04-19.24.23:962][996]LogMemory: Process Physical Memory: 1104.22 MB used, 1120.50 MB peak
+[2017.05.04-19.24.23:962][996]LogMemory: Process Virtual Memory: 1714.14 MB used, 1839.96 MB peak
+[2017.05.04-19.24.23:962][996]LogMemory: Physical Memory: 3014.16 MB used,  977.20 MB free, 3991.36 MB total
+[2017.05.04-19.24.23:962][996]LogMemory: Virtual Memory: 2425.36 MB used,  977.20 MB free, 134217728.00 MB total
+[2017.05.04-19.24.23:962][996]LogMemory: 
+[2017.05.04-19.24.23:962][996]Allocator Stats for TBB: (not implemented)
+[2017.05.04-19.24.25:181][996]LogAIModule: Creating AISystem for world Test1
+[2017.05.04-19.24.25:182][996]LogLoad: Game class is 'ThirdPersonGameMode_C'
+[2017.05.04-19.24.25:184][996]LogWorld: Bringing World /Game/ThirdPersonBP/UEDPIE_0_Test1.Test1 up for play (max tick rate 60) at 2017.05.04-22.24.25
+[2017.05.04-19.24.25:184][996]LogWorld: Bringing up level for play took: 0.001994
+[2017.05.04-19.24.25:232][996]LogLoad: Took 1.504250 seconds to LoadMap(/Game/ThirdPersonBP/Test1)
+[2017.05.04-19.24.31:141][ 91]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2017.05.04-19.24.31:207][ 91]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2017.05.04-19.25.25:450][534]LogAIModule: Creating AISystem for world Test1
+[2017.05.04-19.25.27:850][534]LogSavePackage: Save=32.04ms
+[2017.05.04-19.25.27:850][534]LogSavePackage: Moving '../../../../../../Users/doiser0/Documents/Unreal Projects/proiect_escape_room/Saved/Bp_levelTransition209195EA46A3A29593034F80C67A0D3A.tmp' to '../../../../../../Users/doiser0/Documents/Unreal Projects/proiect_escape_room/Content/ThirdPersonBP/Bp_levelTransition.uasset'
+[2017.05.04-19.25.27:852][534]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/doiser0/Documents/Unreal Projects/proiect_escape_room/Content/ThirdPersonBP/Bp_levelTransition.uasset
+[2017.05.04-19.25.30:634][534]LogSavePackage: Save=162.22ms
+[2017.05.04-19.25.30:634][534]LogSavePackage: Moving '../../../../../../Users/doiser0/Documents/Unreal Projects/proiect_escape_room/Saved/ThirdPersonExampleMap1E06DEA04C63BE5AD2E61A9C68A1B022.tmp' to '../../../../../../Users/doiser0/Documents/Unreal Projects/proiect_escape_room/Content/ThirdPersonBP/Maps/ThirdPersonExampleMap.umap'
+[2017.05.04-19.25.30:656][534]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/doiser0/Documents/Unreal Projects/proiect_escape_room/Content/ThirdPersonBP/Maps/ThirdPersonExampleMap.umap
+[2017.05.04-19.25.30:682][534]LogFileHelpers: Saving map 'ThirdPersonExampleMap' took 2.829
+[2017.05.04-19.25.30:683][534]Cmd: MAP LOAD FILE="../../../../../../Users/doiser0/Documents/Unreal Projects/proiect_escape_room/Content/ThirdPersonBP/Test1.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2017.05.04-19.25.30:683][534]LightingResults: New page: Lighting Build
+[2017.05.04-19.25.30:684][534]LoadErrors: New page: Loading map: Test1.umap
+[2017.05.04-19.25.30:685][534]MapCheck: New page: Map Check
+[2017.05.04-19.25.30:685][534]LightingResults: New page: Lighting Build
+[2017.05.04-19.25.30:754][534]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2017.05.04-19.25.30:777][534]Cmd: MAP CHECKDEP NOCLEARLOG
+[2017.05.04-19.25.30:823][534]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 45.657ms to complete.
+[2017.05.04-19.25.30:823][534]LogFileHelpers: Loading map 'Test1' took 0.142
+[2017.05.04-19.26.58:153][264]LogEditorViewport: Clicking on Actor (LMB): Bp_key_C (Bp_key)
+[2017.05.04-19.27.06:924][693]LogEditorViewport: Clicking on Actor (LMB): Bp_key_C (Bp_key2)
+[2017.05.04-19.27.12:767][965]LogEditorViewport: Clicking on Actor (LMB): Bp_key_C (Bp_key2)
+[2017.05.04-19.27.17:162][180]Cmd: SELECT NONE
+[2017.05.04-19.27.37:454][463]LogSavePackage: Save=37.52ms
+[2017.05.04-19.27.37:454][463]LogSavePackage: Moving '../../../../../../Users/doiser0/Documents/Unreal Projects/proiect_escape_room/Saved/Test142FE487445E06B2824D1B1A7A1AF640D.tmp' to '../../../../../../Users/doiser0/Documents/Unreal Projects/proiect_escape_room/Content/ThirdPersonBP/Test1.umap'
+[2017.05.04-19.27.37:456][463]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/doiser0/Documents/Unreal Projects/proiect_escape_room/Content/ThirdPersonBP/Test1.umap
+[2017.05.04-19.27.44:841][857]LogTemp: Repeting last play command: Selected Viewport
+[2017.05.04-19.27.44:865][857]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.05.04-19.27.44:865][857]PIE: New page: PIE session: Test1 (May 5, 2017, 1:27:44 AM)
+[2017.05.04-19.27.44:865][857]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/UEDPIE_0_Test1
+[2017.05.04-19.27.44:886][857]LogPlayLevel: PIE: StaticDuplicateObject took: (0.020912s)
+[2017.05.04-19.27.44:887][857]LogAIModule: Creating AISystem for world Test1
+[2017.05.04-19.27.44:887][857]LogPlayLevel: PIE: World Init took: (0.000966s)
+[2017.05.04-19.27.44:887][857]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Test1.Test1 to /Game/ThirdPersonBP/UEDPIE_0_Test1.Test1 (0.022132s)
+[2017.05.04-19.27.44:921][857]LogInit: XAudio2 using 'Headphones (CSR8645)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2017.05.04-19.27.44:927][857]LogInit: FAudioDevice initialized.
+[2017.05.04-19.27.45:066][857]LogLoad: Game class is 'ThirdPersonGameMode_C'
+[2017.05.04-19.27.45:071][857]LogWorld: Bringing World /Game/ThirdPersonBP/UEDPIE_0_Test1.Test1 up for play (max tick rate 60) at 2017.05.04-22.27.45
+[2017.05.04-19.27.45:084][857]LogWorld: Bringing up level for play took: 0.015132
+[2017.05.04-19.27.45:092][857]PIE: Info Play in editor start time for /Game/ThirdPersonBP/UEDPIE_0_Test1 -0.1
+[2017.05.04-19.27.54:367][391]LogNet: Browse: /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap
+[2017.05.04-19.27.54:367][391]LogLoad: LoadMap: /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap
+[2017.05.04-19.27.54:411][391]Cmd: MEM
+[2017.05.04-19.27.54:447][391]LogMemory: Platform Memory Stats for Windows
+[2017.05.04-19.27.54:447][391]LogMemory: Process Physical Memory: 1169.31 MB used, 1207.91 MB peak
+[2017.05.04-19.27.54:447][391]LogMemory: Process Virtual Memory: 1808.34 MB used, 1921.70 MB peak
+[2017.05.04-19.27.54:447][391]LogMemory: Physical Memory: 3007.57 MB used,  983.79 MB free, 3991.36 MB total
+[2017.05.04-19.27.54:447][391]LogMemory: Virtual Memory: 2498.94 MB used,  983.79 MB free, 134217728.00 MB total
+[2017.05.04-19.27.54:447][391]LogMemory: 
+[2017.05.04-19.27.54:447][391]Allocator Stats for TBB: (not implemented)
+[2017.05.04-19.27.54:673][391]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2017.05.04-19.27.54:674][391]LogLoad: Game class is 'ThirdPersonGameMode_C'
+[2017.05.04-19.27.54:679][391]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap up for play (max tick rate 60) at 2017.05.04-22.27.54
+[2017.05.04-19.27.54:679][391]LogWorld: Bringing up level for play took: 0.005305
+[2017.05.04-19.27.54:680][391]LogLoad: Took 0.312052 seconds to LoadMap(/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap)
+[2017.05.04-19.28.00:064][704]LogNet: Browse: /Game/ThirdPersonBP/Test1
+[2017.05.04-19.28.00:064][704]LogLoad: LoadMap: /Game/ThirdPersonBP/Test1
+[2017.05.04-19.28.00:114][704]Cmd: MEM
+[2017.05.04-19.28.00:145][704]LogMemory: Platform Memory Stats for Windows
+[2017.05.04-19.28.00:145][704]LogMemory: Process Physical Memory: 1194.19 MB used, 1207.92 MB peak
+[2017.05.04-19.28.00:145][704]LogMemory: Process Virtual Memory: 1879.14 MB used, 1953.71 MB peak
+[2017.05.04-19.28.00:145][704]LogMemory: Physical Memory: 3030.65 MB used,  960.71 MB free, 3991.36 MB total
+[2017.05.04-19.28.00:145][704]LogMemory: Virtual Memory: 2565.32 MB used,  960.71 MB free, 134217728.00 MB total
+[2017.05.04-19.28.00:145][704]LogMemory: 
+[2017.05.04-19.28.00:145][704]Allocator Stats for TBB: (not implemented)
+[2017.05.04-19.28.00:145][704]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/UEDPIE_0_Test1
+[2017.05.04-19.28.00:147][704]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002521s)
+[2017.05.04-19.28.00:148][704]LogAIModule: Creating AISystem for world Test1
+[2017.05.04-19.28.00:148][704]LogPlayLevel: PIE: World Init took: (0.000902s)
+[2017.05.04-19.28.00:148][704]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Test1.Test1 to /Game/ThirdPersonBP/UEDPIE_0_Test1.Test1 (0.003675s)
+[2017.05.04-19.28.00:148][704]LogLoad: Game class is 'ThirdPersonGameMode_C'
+[2017.05.04-19.28.00:150][704]LogWorld: Bringing World /Game/ThirdPersonBP/UEDPIE_0_Test1.Test1 up for play (max tick rate 60) at 2017.05.04-22.28.00
+[2017.05.04-19.28.00:150][704]LogWorld: Bringing up level for play took: 0.001204
+[2017.05.04-19.28.00:153][704]LogLoad: Took 0.089744 seconds to LoadMap(/Game/ThirdPersonBP/UEDPIE_0_Test1)
+[2017.05.04-19.28.04:129][937]LogNet: Browse: /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap
+[2017.05.04-19.28.04:129][937]LogLoad: LoadMap: /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap
+[2017.05.04-19.28.04:177][937]Cmd: MEM
+[2017.05.04-19.28.04:208][937]LogMemory: Platform Memory Stats for Windows
+[2017.05.04-19.28.04:208][937]LogMemory: Process Physical Memory: 1191.01 MB used, 1207.92 MB peak
+[2017.05.04-19.28.04:208][937]LogMemory: Process Virtual Memory: 1860.74 MB used, 1953.71 MB peak
+[2017.05.04-19.28.04:208][937]LogMemory: Physical Memory: 3027.49 MB used,  963.86 MB free, 3991.36 MB total
+[2017.05.04-19.28.04:208][937]LogMemory: Virtual Memory: 2541.24 MB used,  963.86 MB free, 134217728.00 MB total
+[2017.05.04-19.28.04:208][937]LogMemory: 
+[2017.05.04-19.28.04:208][937]Allocator Stats for TBB: (not implemented)
+[2017.05.04-19.28.04:325][937]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2017.05.04-19.28.04:327][937]LogLoad: Game class is 'ThirdPersonGameMode_C'
+[2017.05.04-19.28.04:332][937]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap up for play (max tick rate 60) at 2017.05.04-22.28.04
+[2017.05.04-19.28.04:332][937]LogWorld: Bringing up level for play took: 0.004831
+[2017.05.04-19.28.04:333][937]LogLoad: Took 0.203823 seconds to LoadMap(/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap)
+[2017.05.04-19.28.09:711][250]LogNet: Browse: /Game/ThirdPersonBP/Test1
+[2017.05.04-19.28.09:712][250]LogLoad: LoadMap: /Game/ThirdPersonBP/Test1
+[2017.05.04-19.28.09:759][250]Cmd: MEM
+[2017.05.04-19.28.09:790][250]LogMemory: Platform Memory Stats for Windows
+[2017.05.04-19.28.09:790][250]LogMemory: Process Physical Memory: 1200.55 MB used, 1208.32 MB peak
+[2017.05.04-19.28.09:790][250]LogMemory: Process Virtual Memory: 1895.60 MB used, 1953.71 MB peak
+[2017.05.04-19.28.09:790][250]LogMemory: Physical Memory: 3045.60 MB used,  945.75 MB free, 3991.36 MB total
+[2017.05.04-19.28.09:790][250]LogMemory: Virtual Memory: 2573.30 MB used,  945.75 MB free, 134217728.00 MB total
+[2017.05.04-19.28.09:791][250]LogMemory: 
+[2017.05.04-19.28.09:791][250]Allocator Stats for TBB: (not implemented)
+[2017.05.04-19.28.09:791][250]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/UEDPIE_0_Test1
+[2017.05.04-19.28.09:793][250]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002538s)
+[2017.05.04-19.28.09:794][250]LogAIModule: Creating AISystem for world Test1
+[2017.05.04-19.28.09:794][250]LogPlayLevel: PIE: World Init took: (0.000925s)
+[2017.05.04-19.28.09:794][250]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Test1.Test1 to /Game/ThirdPersonBP/UEDPIE_0_Test1.Test1 (0.003741s)
+[2017.05.04-19.28.09:794][250]LogLoad: Game class is 'ThirdPersonGameMode_C'
+[2017.05.04-19.28.09:796][250]LogWorld: Bringing World /Game/ThirdPersonBP/UEDPIE_0_Test1.Test1 up for play (max tick rate 60) at 2017.05.04-22.28.09
+[2017.05.04-19.28.09:796][250]LogWorld: Bringing up level for play took: 0.001506
+[2017.05.04-19.28.09:799][250]LogLoad: Took 0.087978 seconds to LoadMap(/Game/ThirdPersonBP/UEDPIE_0_Test1)
+[2017.05.04-19.28.12:610][414]LogNet: Browse: /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap
+[2017.05.04-19.28.12:610][414]LogLoad: LoadMap: /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap
+[2017.05.04-19.28.12:658][414]Cmd: MEM
+[2017.05.04-19.28.12:689][414]LogMemory: Platform Memory Stats for Windows
+[2017.05.04-19.28.12:689][414]LogMemory: Process Physical Memory: 1199.59 MB used, 1208.32 MB peak
+[2017.05.04-19.28.12:689][414]LogMemory: Process Virtual Memory: 1878.38 MB used, 1953.71 MB peak
+[2017.05.04-19.28.12:689][414]LogMemory: Physical Memory: 3042.73 MB used,  948.63 MB free, 3991.36 MB total
+[2017.05.04-19.28.12:689][414]LogMemory: Virtual Memory: 2557.24 MB used,  948.63 MB free, 134217728.00 MB total
+[2017.05.04-19.28.12:689][414]LogMemory: 
+[2017.05.04-19.28.12:689][414]Allocator Stats for TBB: (not implemented)
+[2017.05.04-19.28.12:798][414]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2017.05.04-19.28.12:798][414]LogLoad: Game class is 'ThirdPersonGameMode_C'
+[2017.05.04-19.28.12:804][414]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap up for play (max tick rate 60) at 2017.05.04-22.28.12
+[2017.05.04-19.28.12:804][414]LogWorld: Bringing up level for play took: 0.005565
+[2017.05.04-19.28.12:806][414]LogLoad: Took 0.196090 seconds to LoadMap(/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap)
+[2017.05.04-19.28.27:456][782]LogTemp: Repeting last play command: Selected Viewport
+[2017.05.04-19.28.27:478][782]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.05.04-19.28.27:478][782]PIE: New page: PIE session: Test1 (May 5, 2017, 1:28:27 AM)
+[2017.05.04-19.28.27:478][782]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/UEDPIE_0_Test1
+[2017.05.04-19.28.27:481][782]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002296s)
+[2017.05.04-19.28.27:481][782]LogAIModule: Creating AISystem for world Test1
+[2017.05.04-19.28.27:482][782]LogPlayLevel: PIE: World Init took: (0.000818s)
+[2017.05.04-19.28.27:482][782]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Test1.Test1 to /Game/ThirdPersonBP/UEDPIE_0_Test1.Test1 (0.003363s)
+[2017.05.04-19.28.27:520][782]LogInit: XAudio2 using 'Headphones (CSR8645)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2017.05.04-19.28.27:524][782]LogInit: FAudioDevice initialized.
+[2017.05.04-19.28.27:555][782]LogLoad: Game class is 'ThirdPersonGameMode_C'
+[2017.05.04-19.28.27:557][782]LogWorld: Bringing World /Game/ThirdPersonBP/UEDPIE_0_Test1.Test1 up for play (max tick rate 60) at 2017.05.04-22.28.27
+[2017.05.04-19.28.27:557][782]LogWorld: Bringing up level for play took: 0.001414
+[2017.05.04-19.28.27:559][782]PIE: Info Play in editor start time for /Game/ThirdPersonBP/UEDPIE_0_Test1 0.367
+[2017.05.04-19.28.33:619][136]LogNet: Browse: /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap
+[2017.05.04-19.28.33:619][136]LogLoad: LoadMap: /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap
+[2017.05.04-19.28.33:668][136]Cmd: MEM
+[2017.05.04-19.28.33:699][136]LogMemory: Platform Memory Stats for Windows
+[2017.05.04-19.28.33:699][136]LogMemory: Process Physical Memory: 1193.09 MB used, 1209.15 MB peak
+[2017.05.04-19.28.33:699][136]LogMemory: Process Virtual Memory: 1885.46 MB used, 1953.71 MB peak
+[2017.05.04-19.28.33:699][136]LogMemory: Physical Memory: 3021.84 MB used,  969.52 MB free, 3991.36 MB total
+[2017.05.04-19.28.33:699][136]LogMemory: Virtual Memory: 2578.96 MB used,  969.52 MB free, 134217728.00 MB total
+[2017.05.04-19.28.33:699][136]LogMemory: 
+[2017.05.04-19.28.33:699][136]Allocator Stats for TBB: (not implemented)
+[2017.05.04-19.28.33:864][136]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2017.05.04-19.28.33:864][136]LogLoad: Game class is 'ThirdPersonGameMode_C'
+[2017.05.04-19.28.33:881][136]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap up for play (max tick rate 60) at 2017.05.04-22.28.33
+[2017.05.04-19.28.33:882][136]LogWorld: Bringing up level for play took: 0.016901
+[2017.05.04-19.28.33:884][136]LogLoad: Took 0.264351 seconds to LoadMap(/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap)
+[2017.05.04-19.28.37:285][332]LogBlueprintUserMessages: [Bp_levelTransition_206] You don't have enough keys!
+[2017.05.04-19.28.40:135][501]LogBlueprintUserMessages: [Bp_levelTransition_206] You don't have enough keys!
+[2017.05.04-19.28.44:483][756]LogNet: Browse: /Game/ThirdPersonBP/Test1
+[2017.05.04-19.28.44:483][756]LogLoad: LoadMap: /Game/ThirdPersonBP/Test1
+[2017.05.04-19.28.44:535][756]Cmd: MEM
+[2017.05.04-19.28.44:566][756]LogMemory: Platform Memory Stats for Windows
+[2017.05.04-19.28.44:566][756]LogMemory: Process Physical Memory: 1201.25 MB used, 1210.45 MB peak
+[2017.05.04-19.28.44:566][756]LogMemory: Process Virtual Memory: 1908.24 MB used, 1968.39 MB peak
+[2017.05.04-19.28.44:566][756]LogMemory: Physical Memory: 3028.92 MB used,  962.44 MB free, 3991.36 MB total
+[2017.05.04-19.28.44:566][756]LogMemory: Virtual Memory: 2600.90 MB used,  962.44 MB free, 134217728.00 MB total
+[2017.05.04-19.28.44:566][756]LogMemory: 
+[2017.05.04-19.28.44:566][756]Allocator Stats for TBB: (not implemented)
+[2017.05.04-19.28.44:566][756]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/UEDPIE_0_Test1
+[2017.05.04-19.28.44:569][756]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002321s)
+[2017.05.04-19.28.44:569][756]LogAIModule: Creating AISystem for world Test1
+[2017.05.04-19.28.44:569][756]LogPlayLevel: PIE: World Init took: (0.000631s)
+[2017.05.04-19.28.44:569][756]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Test1.Test1 to /Game/ThirdPersonBP/UEDPIE_0_Test1.Test1 (0.003149s)
+[2017.05.04-19.28.44:569][756]LogLoad: Game class is 'ThirdPersonGameMode_C'
+[2017.05.04-19.28.44:571][756]LogWorld: Bringing World /Game/ThirdPersonBP/UEDPIE_0_Test1.Test1 up for play (max tick rate 60) at 2017.05.04-22.28.44
+[2017.05.04-19.28.44:571][756]LogWorld: Bringing up level for play took: 0.001167
+[2017.05.04-19.28.44:573][756]LogLoad: Took 0.089840 seconds to LoadMap(/Game/ThirdPersonBP/UEDPIE_0_Test1)
+[2017.05.04-19.28.48:484][983]LogNet: Browse: /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap
+[2017.05.04-19.28.48:484][983]LogLoad: LoadMap: /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap
+[2017.05.04-19.28.48:531][983]Cmd: MEM
+[2017.05.04-19.28.48:562][983]LogMemory: Platform Memory Stats for Windows
+[2017.05.04-19.28.48:562][983]LogMemory: Process Physical Memory: 1202.93 MB used, 1210.45 MB peak
+[2017.05.04-19.28.48:562][983]LogMemory: Process Virtual Memory: 1893.12 MB used, 1968.39 MB peak
+[2017.05.04-19.28.48:562][983]LogMemory: Physical Memory: 3026.08 MB used,  965.27 MB free, 3991.36 MB total
+[2017.05.04-19.28.48:562][983]LogMemory: Virtual Memory: 2584.84 MB used,  965.27 MB free, 134217728.00 MB total
+[2017.05.04-19.28.48:562][983]LogMemory: 
+[2017.05.04-19.28.48:562][983]Allocator Stats for TBB: (not implemented)
+[2017.05.04-19.28.48:676][983]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2017.05.04-19.28.48:676][983]LogLoad: Game class is 'ThirdPersonGameMode_C'
+[2017.05.04-19.28.48:681][983]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap up for play (max tick rate 60) at 2017.05.04-22.28.48
+[2017.05.04-19.28.48:682][983]LogWorld: Bringing up level for play took: 0.004717
+[2017.05.04-19.28.48:682][983]LogLoad: Took 0.198638 seconds to LoadMap(/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap)
+[2017.05.04-19.28.55:432][378]LogNet: Browse: /Game/ThirdPersonBP/Test1
+[2017.05.04-19.28.55:432][378]LogLoad: LoadMap: /Game/ThirdPersonBP/Test1
+[2017.05.04-19.28.55:481][378]Cmd: MEM
+[2017.05.04-19.28.55:512][378]LogMemory: Platform Memory Stats for Windows
+[2017.05.04-19.28.55:512][378]LogMemory: Process Physical Memory: 1202.37 MB used, 1214.62 MB peak
+[2017.05.04-19.28.55:512][378]LogMemory: Process Virtual Memory: 1905.38 MB used, 1970.75 MB peak
+[2017.05.04-19.28.55:512][378]LogMemory: Physical Memory: 3017.19 MB used,  974.16 MB free, 3991.36 MB total
+[2017.05.04-19.28.55:512][378]LogMemory: Virtual Memory: 2606.54 MB used,  974.16 MB free, 134217728.00 MB total
+[2017.05.04-19.28.55:512][378]LogMemory: 
+[2017.05.04-19.28.55:512][378]Allocator Stats for TBB: (not implemented)
+[2017.05.04-19.28.55:512][378]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/UEDPIE_0_Test1
+[2017.05.04-19.28.55:515][378]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002543s)
+[2017.05.04-19.28.55:516][378]LogAIModule: Creating AISystem for world Test1
+[2017.05.04-19.28.55:516][378]LogPlayLevel: PIE: World Init took: (0.000824s)
+[2017.05.04-19.28.55:516][378]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Test1.Test1 to /Game/ThirdPersonBP/UEDPIE_0_Test1.Test1 (0.003616s)
+[2017.05.04-19.28.55:516][378]LogLoad: Game class is 'ThirdPersonGameMode_C'
+[2017.05.04-19.28.55:518][378]LogWorld: Bringing World /Game/ThirdPersonBP/UEDPIE_0_Test1.Test1 up for play (max tick rate 60) at 2017.05.04-22.28.55
+[2017.05.04-19.28.55:518][378]LogWorld: Bringing up level for play took: 0.001212
+[2017.05.04-19.28.55:520][378]LogLoad: Took 0.088141 seconds to LoadMap(/Game/ThirdPersonBP/UEDPIE_0_Test1)
+[2017.05.04-19.29.15:293][542]LogNet: Browse: /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap
+[2017.05.04-19.29.15:293][542]LogLoad: LoadMap: /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap
+[2017.05.04-19.29.15:341][542]Cmd: MEM
+[2017.05.04-19.29.15:372][542]LogMemory: Platform Memory Stats for Windows
+[2017.05.04-19.29.15:372][542]LogMemory: Process Physical Memory: 1194.33 MB used, 1214.62 MB peak
+[2017.05.04-19.29.15:372][542]LogMemory: Process Virtual Memory: 1879.89 MB used, 1970.75 MB peak
+[2017.05.04-19.29.15:372][542]LogMemory: Physical Memory: 3013.20 MB used,  978.15 MB free, 3991.36 MB total
+[2017.05.04-19.29.15:372][542]LogMemory: Virtual Memory: 2581.92 MB used,  978.15 MB free, 134217728.00 MB total
+[2017.05.04-19.29.15:372][542]LogMemory: 
+[2017.05.04-19.29.15:372][542]Allocator Stats for TBB: (not implemented)
+[2017.05.04-19.29.15:486][542]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2017.05.04-19.29.15:487][542]LogLoad: Game class is 'ThirdPersonGameMode_C'
+[2017.05.04-19.29.15:492][542]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap up for play (max tick rate 60) at 2017.05.04-22.29.15
+[2017.05.04-19.29.15:492][542]LogWorld: Bringing up level for play took: 0.004949
+[2017.05.04-19.29.15:493][542]LogLoad: Took 0.200348 seconds to LoadMap(/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap)
+[2017.05.04-19.30.17:546][954]LogBlueprintUserMessages: [ThirdPersonCharacter_167] 0
+[2017.05.04-19.30.17:736][965]LogBlueprintUserMessages: [ThirdPersonCharacter_167] 0
+[2017.05.04-19.30.17:859][972]LogBlueprintUserMessages: [ThirdPersonCharacter_167] 0
+[2017.05.04-19.30.21:196][164]LogBlueprintUserMessages: [ThirdPersonCharacter_167] 2
+[2017.05.04-19.30.22:362][229]LogNet: Browse: /Game/ThirdPersonBP/Test1
+[2017.05.04-19.30.22:412][229]LogLoad: LoadMap: /Game/ThirdPersonBP/Test1
+[2017.05.04-19.30.22:459][229]Cmd: MEM
+[2017.05.04-19.30.22:503][229]LogMemory: Platform Memory Stats for Windows
+[2017.05.04-19.30.22:503][229]LogMemory: Process Physical Memory: 1202.52 MB used, 1214.62 MB peak
+[2017.05.04-19.30.22:503][229]LogMemory: Process Virtual Memory: 1903.18 MB used, 1970.75 MB peak
+[2017.05.04-19.30.22:503][229]LogMemory: Physical Memory: 3069.14 MB used,  922.21 MB free, 3991.36 MB total
+[2017.05.04-19.30.22:503][229]LogMemory: Virtual Memory: 2605.17 MB used,  922.21 MB free, 134217728.00 MB total
+[2017.05.04-19.30.22:503][229]LogMemory: 
+[2017.05.04-19.30.22:503][229]Allocator Stats for TBB: (not implemented)
+[2017.05.04-19.30.22:503][229]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/UEDPIE_0_Test1
+[2017.05.04-19.30.22:554][229]LogPlayLevel: PIE: StaticDuplicateObject took: (0.050675s)
+[2017.05.04-19.30.22:555][229]LogAIModule: Creating AISystem for world Test1
+[2017.05.04-19.30.22:555][229]LogPlayLevel: PIE: World Init took: (0.000851s)
+[2017.05.04-19.30.22:555][229]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Test1.Test1 to /Game/ThirdPersonBP/UEDPIE_0_Test1.Test1 (0.051790s)
+[2017.05.04-19.30.22:555][229]LogLoad: Game class is 'ThirdPersonGameMode_C'
+[2017.05.04-19.30.22:557][229]LogWorld: Bringing World /Game/ThirdPersonBP/UEDPIE_0_Test1.Test1 up for play (max tick rate 60) at 2017.05.04-22.30.22
+[2017.05.04-19.30.22:557][229]LogWorld: Bringing up level for play took: 0.001748
+[2017.05.04-19.30.22:560][229]LogLoad: Took 0.148766 seconds to LoadMap(/Game/ThirdPersonBP/UEDPIE_0_Test1)
+[2017.05.04-19.30.23:012][253]LogBlueprintUserMessages: [ThirdPersonCharacter_C_0] 2
+[2017.05.04-19.30.23:674][292]LogBlueprintUserMessages: [ThirdPersonCharacter_C_0] 2
+[2017.05.04-19.30.23:874][304]LogBlueprintUserMessages: [ThirdPersonCharacter_C_0] 2
+[2017.05.04-19.30.24:040][314]LogBlueprintUserMessages: [ThirdPersonCharacter_C_0] 2
+[2017.05.04-19.30.24:208][324]LogBlueprintUserMessages: [ThirdPersonCharacter_C_0] 2
+[2017.05.04-19.30.25:639][408]LogBlueprintUserMessages: [ThirdPersonCharacter_C_0] 3
+[2017.05.04-19.30.26:163][438]LogBlueprintUserMessages: [ThirdPersonCharacter_C_0] 3
+[2017.05.04-19.30.26:565][461]LogBlueprintUserMessages: [ThirdPersonCharacter_C_0] 3
+[2017.05.04-19.30.29:457][630]LogNet: Browse: /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap
+[2017.05.04-19.30.29:493][630]LogLoad: LoadMap: /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap
+[2017.05.04-19.30.29:527][630]Cmd: MEM
+[2017.05.04-19.30.29:557][630]LogMemory: Platform Memory Stats for Windows
+[2017.05.04-19.30.29:557][630]LogMemory: Process Physical Memory: 1202.80 MB used, 1214.62 MB peak
+[2017.05.04-19.30.29:557][630]LogMemory: Process Virtual Memory: 1886.95 MB used, 1970.75 MB peak
+[2017.05.04-19.30.29:557][630]LogMemory: Physical Memory: 3069.04 MB used,  922.32 MB free, 3991.36 MB total
+[2017.05.04-19.30.29:557][630]LogMemory: Virtual Memory: 2589.11 MB used,  922.32 MB free, 134217728.00 MB total
+[2017.05.04-19.30.29:557][630]LogMemory: 
+[2017.05.04-19.30.29:557][630]Allocator Stats for TBB: (not implemented)
+[2017.05.04-19.30.30:073][630]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2017.05.04-19.30.30:073][630]LogLoad: Game class is 'ThirdPersonGameMode_C'
+[2017.05.04-19.30.30:080][630]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap up for play (max tick rate 60) at 2017.05.04-22.30.30
+[2017.05.04-19.30.30:081][630]LogWorld: Bringing up level for play took: 0.007044
+[2017.05.04-19.30.30:082][630]LogLoad: Took 0.589301 seconds to LoadMap(/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap)
+[2017.05.04-19.30.30:789][667]LogBlueprintUserMessages: [ThirdPersonCharacter_167] 0
+[2017.05.04-19.30.31:205][692]LogBlueprintUserMessages: [ThirdPersonCharacter_167] 0
+[2017.05.04-19.30.31:422][705]LogBlueprintUserMessages: [ThirdPersonCharacter_167] 0
+[2017.05.04-19.30.34:853][906]LogNet: Browse: /Game/ThirdPersonBP/Test1
+[2017.05.04-19.30.34:891][906]LogLoad: LoadMap: /Game/ThirdPersonBP/Test1
+[2017.05.04-19.30.34:926][906]Cmd: MEM
+[2017.05.04-19.30.34:957][906]LogMemory: Platform Memory Stats for Windows
+[2017.05.04-19.30.34:957][906]LogMemory: Process Physical Memory: 1204.39 MB used, 1214.62 MB peak
+[2017.05.04-19.30.34:957][906]LogMemory: Process Virtual Memory: 1905.08 MB used, 1970.75 MB peak
+[2017.05.04-19.30.34:957][906]LogMemory: Physical Memory: 3063.44 MB used,  927.91 MB free, 3991.36 MB total
+[2017.05.04-19.30.34:957][906]LogMemory: Virtual Memory: 2605.17 MB used,  927.91 MB free, 134217728.00 MB total
+[2017.05.04-19.30.34:957][906]LogMemory: 
+[2017.05.04-19.30.34:957][906]Allocator Stats for TBB: (not implemented)
+[2017.05.04-19.30.34:957][906]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/UEDPIE_0_Test1
+[2017.05.04-19.30.34:960][906]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003296s)
+[2017.05.04-19.30.34:961][906]LogAIModule: Creating AISystem for world Test1
+[2017.05.04-19.30.34:961][906]LogPlayLevel: PIE: World Init took: (0.000606s)
+[2017.05.04-19.30.34:961][906]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Test1.Test1 to /Game/ThirdPersonBP/UEDPIE_0_Test1.Test1 (0.004165s)
+[2017.05.04-19.30.34:961][906]LogLoad: Game class is 'ThirdPersonGameMode_C'
+[2017.05.04-19.30.34:962][906]LogWorld: Bringing World /Game/ThirdPersonBP/UEDPIE_0_Test1.Test1 up for play (max tick rate 60) at 2017.05.04-22.30.34
+[2017.05.04-19.30.34:962][906]LogWorld: Bringing up level for play took: 0.001057
+[2017.05.04-19.30.34:965][906]LogLoad: Took 0.073853 seconds to LoadMap(/Game/ThirdPersonBP/UEDPIE_0_Test1)
+[2017.05.04-19.30.35:675][946]LogBlueprintUserMessages: [ThirdPersonCharacter_C_0] 2
+[2017.05.04-19.30.35:954][962]LogBlueprintUserMessages: [ThirdPersonCharacter_C_0] 2
+[2017.05.04-19.30.37:476][ 52]LogBlueprintUserMessages: [ThirdPersonCharacter_C_0] 3
+[2017.05.04-19.30.39:438][167]LogNet: Browse: /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap
+[2017.05.04-19.30.39:438][167]LogLoad: LoadMap: /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap
+[2017.05.04-19.30.39:485][167]Cmd: MEM
+[2017.05.04-19.30.39:516][167]LogMemory: Platform Memory Stats for Windows
+[2017.05.04-19.30.39:516][167]LogMemory: Process Physical Memory: 1203.14 MB used, 1214.62 MB peak
+[2017.05.04-19.30.39:516][167]LogMemory: Process Virtual Memory: 1887.08 MB used, 1970.75 MB peak
+[2017.05.04-19.30.39:516][167]LogMemory: Physical Memory: 3063.21 MB used,  928.14 MB free, 3991.36 MB total
+[2017.05.04-19.30.39:516][167]LogMemory: Virtual Memory: 2589.11 MB used,  928.14 MB free, 134217728.00 MB total
+[2017.05.04-19.30.39:516][167]LogMemory: 
+[2017.05.04-19.30.39:516][167]Allocator Stats for TBB: (not implemented)
+[2017.05.04-19.30.39:619][167]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2017.05.04-19.30.39:620][167]LogLoad: Game class is 'ThirdPersonGameMode_C'
+[2017.05.04-19.30.39:625][167]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap up for play (max tick rate 60) at 2017.05.04-22.30.39
+[2017.05.04-19.30.39:625][167]LogWorld: Bringing up level for play took: 0.004972
+[2017.05.04-19.30.39:626][167]LogLoad: Took 0.188026 seconds to LoadMap(/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap)
+[2017.05.04-19.46.21:747][804]LogMaterial: Missing cached shader map for material LayerVisMaterial, compiling. 
+[2017.05.04-19.46.21:778][804]LogTemp:Display: Added material ShaderMap 0x000000AF1EAA9280 with Material 0x000000AF679E5300 to ShaderMapsBeingCompiled
+[2017.05.04-19.46.21:963][804]LogTemp:Display: Kicking off shader compilation for LayerVisMaterial, GameThreadShaderMap 0x000000AF1EAA9280
+[2017.05.04-19.46.22:108][804]LogMaterial: Missing cached shader map for material SelectBrushMaterial, compiling. 
+[2017.05.04-19.46.22:123][804]LogTemp:Display: Added material ShaderMap 0x000000AF6866B580 with Material 0x000000AF1E785900 to ShaderMapsBeingCompiled
+[2017.05.04-19.46.22:167][804]LogTemp:Display: Kicking off shader compilation for SelectBrushMaterial, GameThreadShaderMap 0x000000AF6866B580
+[2017.05.04-19.46.22:243][804]LogMaterial: Missing cached shader map for material SelectBrushMaterial, compiling. 
+[2017.05.04-19.46.22:264][804]LogTemp:Display: Added material ShaderMap 0x000000AF31B1B580 with Material 0x000000AF4B967580 to ShaderMapsBeingCompiled
+[2017.05.04-19.46.22:278][804]LogTemp:Display: Kicking off shader compilation for SelectBrushMaterial, GameThreadShaderMap 0x000000AF31B1B580
+[2017.05.04-19.46.22:483][804]LogMaterial: Missing cached shader map for material MaskBrushMaterial, compiling. 
+[2017.05.04-19.46.22:488][804]LogTemp:Display: Added material ShaderMap 0x000000AF1EACCB80 with Material 0x000000AF48880D00 to ShaderMapsBeingCompiled
+[2017.05.04-19.46.22:517][804]LogTemp:Display: Kicking off shader compilation for MaskBrushMaterial, GameThreadShaderMap 0x000000AF1EACCB80
+[2017.05.04-19.46.22:848][804]LogMaterial: Missing cached shader map for material LandscapeLayerUsageMaterial, compiling. 
+[2017.05.04-19.46.22:852][804]LogTemp:Display: Added material ShaderMap 0x000000AF1E22EE80 with Material 0x000000AF65EE0700 to ShaderMapsBeingCompiled
+[2017.05.04-19.46.22:867][804]LogTemp:Display: Kicking off shader compilation for LandscapeLayerUsageMaterial, GameThreadShaderMap 0x000000AF1E22EE80
+[2017.05.04-19.46.23:922][804]LogMaterial: Missing cached shader map for material CircleBrushMaterial, compiling. 
+[2017.05.04-19.46.23:923][804]LogTemp:Display: Added material ShaderMap 0x000000AF3C657C80 with Material 0x000000AF682FAC80 to ShaderMapsBeingCompiled
+[2017.05.04-19.46.23:936][804]LogTemp:Display: Kicking off shader compilation for CircleBrushMaterial, GameThreadShaderMap 0x000000AF3C657C80
+[2017.05.04-19.46.23:946][804]LogMaterial: Missing cached shader map for material CircleBrushMaterial, compiling. 
+[2017.05.04-19.46.23:947][804]LogTemp:Display: Added material ShaderMap 0x000000AF6453D980 with Material 0x000000AF6757F280 to ShaderMapsBeingCompiled
+[2017.05.04-19.46.23:960][804]LogTemp:Display: Kicking off shader compilation for CircleBrushMaterial, GameThreadShaderMap 0x000000AF6453D980
+[2017.05.04-19.46.24:028][804]LogMaterial: Missing cached shader map for material CircleBrushMaterial, compiling. 
+[2017.05.04-19.46.24:029][804]LogTemp:Display: Added material ShaderMap 0x000000AF67907580 with Material 0x000000AF6757F580 to ShaderMapsBeingCompiled
+[2017.05.04-19.46.24:043][804]LogTemp:Display: Kicking off shader compilation for CircleBrushMaterial, GameThreadShaderMap 0x000000AF67907580
+[2017.05.04-19.46.24:104][804]LogMaterial: Missing cached shader map for material CircleBrushMaterial, compiling. 
+[2017.05.04-19.46.24:105][804]LogTemp:Display: Added material ShaderMap 0x000000AF4B103900 with Material 0x000000AF6748A200 to ShaderMapsBeingCompiled
+[2017.05.04-19.46.24:121][804]LogTemp:Display: Kicking off shader compilation for CircleBrushMaterial, GameThreadShaderMap 0x000000AF4B103900
+[2017.05.04-19.46.24:256][804]LogMaterial: Missing cached shader map for material AlphaBrushMaterial, compiling. 
+[2017.05.04-19.46.24:257][804]LogTemp:Display: Added material ShaderMap 0x000000AF60B6E780 with Material 0x000000AF4B860700 to ShaderMapsBeingCompiled
+[2017.05.04-19.46.24:273][804]LogTemp:Display: Kicking off shader compilation for AlphaBrushMaterial, GameThreadShaderMap 0x000000AF60B6E780
+[2017.05.04-19.46.24:343][804]LogMaterial: Missing cached shader map for material CircleBrushMaterial, compiling. 
+[2017.05.04-19.46.24:345][804]LogTemp:Display: Added material ShaderMap 0x000000AF69F5E780 with Material 0x000000AF67598100 to ShaderMapsBeingCompiled
+[2017.05.04-19.46.24:360][804]LogTemp:Display: Kicking off shader compilation for CircleBrushMaterial, GameThreadShaderMap 0x000000AF69F5E780
+[2017.05.04-19.46.24:380][804]LogTemp:Display: Added shader map 0x000000AF6866B580 from material 0x000000AF67867700
+[2017.05.04-19.46.24:404][804]LogTemp:Display: Found existing compiling shader for material SelectBrushMaterial, linking to other GameThreadShaderMap 0x000000AF6866B580
+[2017.05.04-19.46.24:478][804]LogMaterial: Missing cached shader map for material MaskBrushMaterial, compiling. 
+[2017.05.04-19.46.24:480][804]LogTemp:Display: Added material ShaderMap 0x000000AF6410D280 with Material 0x000000AF67864A00 to ShaderMapsBeingCompiled
+[2017.05.04-19.46.24:494][804]LogTemp:Display: Kicking off shader compilation for MaskBrushMaterial, GameThreadShaderMap 0x000000AF6410D280
+[2017.05.04-19.46.24:983][804]LogTexture:Display: Building textures: Texture2D_2 (G8)
+[2017.05.04-19.46.37:719][341]LogTemp:Display: Finished compile of shader map 0x000000AF1EAA9280
+[2017.05.04-19.46.37:719][341]LogTemp:Display: Shader map LayerVisMaterial complete, GameThreadShaderMap 0x000000AF1EAA9280, marking material LayerVisMaterial as finished
+[2017.05.04-19.46.37:719][341]LogTemp:Display: Marking material as finished 0x000000AF679E5300
+[2017.05.04-19.46.40:648][477]LogTemp:Display: Finished compile of shader map 0x000000AF6866B580
+[2017.05.04-19.46.40:648][477]LogTemp:Display: Shader map SelectBrushMaterial complete, GameThreadShaderMap 0x000000AF6866B580, marking material SelectBrushMaterial as finished
+[2017.05.04-19.46.40:648][477]LogTemp:Display: Marking material as finished 0x000000AF1E785900
+[2017.05.04-19.46.40:649][477]LogTemp:Display: Shader map SelectBrushMaterial complete, GameThreadShaderMap 0x000000AF6866B580, marking material SelectBrushMaterial as finished
+[2017.05.04-19.46.40:649][477]LogTemp:Display: Marking material as finished 0x000000AF67867700
+[2017.05.04-19.46.47:904][812]LogTemp:Display: Finished compile of shader map 0x000000AF31B1B580
+[2017.05.04-19.46.47:904][812]LogTemp:Display: Shader map SelectBrushMaterial complete, GameThreadShaderMap 0x000000AF31B1B580, marking material SelectBrushMaterial as finished
+[2017.05.04-19.46.47:904][812]LogTemp:Display: Marking material as finished 0x000000AF4B967580
+[2017.05.04-19.46.49:988][908]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (BP_Sky_Sphere)
+[2017.05.04-19.46.53:864][ 91]LogTemp:Display: Finished compile of shader map 0x000000AF1EACCB80
+[2017.05.04-19.46.53:864][ 91]LogTemp:Display: Shader map MaskBrushMaterial complete, GameThreadShaderMap 0x000000AF1EACCB80, marking material MaskBrushMaterial as finished
+[2017.05.04-19.46.53:864][ 91]LogTemp:Display: Marking material as finished 0x000000AF48880D00
+[2017.05.04-19.46.55:171][152]LogTemp:Display: Finished compile of shader map 0x000000AF1E22EE80
+[2017.05.04-19.46.55:171][152]LogTemp:Display: Shader map LandscapeLayerUsageMaterial complete, GameThreadShaderMap 0x000000AF1E22EE80, marking material LandscapeLayerUsageMaterial as finished
+[2017.05.04-19.46.55:171][152]LogTemp:Display: Marking material as finished 0x000000AF65EE0700
+[2017.05.04-19.46.56:261][202]LogTemp:Display: Finished compile of shader map 0x000000AF3C657C80
+[2017.05.04-19.46.56:261][202]LogTemp:Display: Shader map CircleBrushMaterial complete, GameThreadShaderMap 0x000000AF3C657C80, marking material CircleBrushMaterial as finished
+[2017.05.04-19.46.56:261][202]LogTemp:Display: Marking material as finished 0x000000AF682FAC80
+[2017.05.04-19.47.02:571][469]LogTemp:Display: Finished compile of shader map 0x000000AF6453D980
+[2017.05.04-19.47.02:571][469]LogTemp:Display: Shader map CircleBrushMaterial complete, GameThreadShaderMap 0x000000AF6453D980, marking material CircleBrushMaterial as finished
+[2017.05.04-19.47.02:571][469]LogTemp:Display: Marking material as finished 0x000000AF6757F280
+[2017.05.04-19.47.07:594][703]LogTemp:Display: Finished compile of shader map 0x000000AF67907580
+[2017.05.04-19.47.07:594][703]LogTemp:Display: Shader map CircleBrushMaterial complete, GameThreadShaderMap 0x000000AF67907580, marking material CircleBrushMaterial as finished
+[2017.05.04-19.47.07:594][703]LogTemp:Display: Marking material as finished 0x000000AF6757F580
+[2017.05.04-19.47.10:862][844]LogTemp:Display: Finished compile of shader map 0x000000AF4B103900
+[2017.05.04-19.47.10:863][844]LogTemp:Display: Shader map CircleBrushMaterial complete, GameThreadShaderMap 0x000000AF4B103900, marking material CircleBrushMaterial as finished
+[2017.05.04-19.47.10:863][844]LogTemp:Display: Marking material as finished 0x000000AF6748A200
+[2017.05.04-19.47.18:996][162]LogTemp:Display: Finished compile of shader map 0x000000AF60B6E780
+[2017.05.04-19.47.18:996][162]LogTemp:Display: Shader map AlphaBrushMaterial complete, GameThreadShaderMap 0x000000AF60B6E780, marking material AlphaBrushMaterial as finished
+[2017.05.04-19.47.18:996][162]LogTemp:Display: Marking material as finished 0x000000AF4B860700
+[2017.05.04-19.47.19:004][162]LogTemp:Display: Finished compile of shader map 0x000000AF69F5E780
+[2017.05.04-19.47.19:004][162]LogTemp:Display: Shader map CircleBrushMaterial complete, GameThreadShaderMap 0x000000AF69F5E780, marking material CircleBrushMaterial as finished
+[2017.05.04-19.47.19:004][162]LogTemp:Display: Marking material as finished 0x000000AF67598100
+[2017.05.04-19.47.21:214][257]LogTexture:Display: Building textures: Texture2D_3 (G8)
+[2017.05.04-19.47.23:221][336]LogTemp:Display: Finished compile of shader map 0x000000AF6410D280
+[2017.05.04-19.47.23:221][336]LogTemp:Display: Shader map MaskBrushMaterial complete, GameThreadShaderMap 0x000000AF6410D280, marking material MaskBrushMaterial as finished
+[2017.05.04-19.47.23:221][336]LogTemp:Display: Marking material as finished 0x000000AF67864A00
+[2017.05.04-19.47.58:114][765]LogSavePackage: Save=113.14ms
+[2017.05.04-19.47.58:114][765]LogSavePackage: Moving '../../../../../../Users/doiser0/Documents/Unreal Projects/proiect_escape_room/Saved/Test1_Auto1CAD4E447423906331A0E2B9465F1198E.tmp' to '../../../../../../Users/doiser0/Documents/Unreal Projects/proiect_escape_room/Saved/Autosaves/Game/ThirdPersonBP/Test1_Auto1.umap'
+[2017.05.04-19.47.58:115][765]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/doiser0/Documents/Unreal Projects/proiect_escape_room/Saved/Autosaves/Game/ThirdPersonBP/Test1_Auto1.umap
+[2017.05.04-19.47.58:119][765]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/ThirdPersonBP/Test1' took 0.279
+[2017.05.04-19.47.58:119][765]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.279
+[2017.05.04-20.42.46:072][347]LogSavePackage: Save=289.88ms
+[2017.05.04-20.42.46:097][347]LogSavePackage: Moving '../../../../../../Users/doiser0/Documents/Unreal Projects/proiect_escape_room/Saved/Test17A66928E432E4FC3F5A8EEB579A9777E.tmp' to '../../../../../../Users/doiser0/Documents/Unreal Projects/proiect_escape_room/Content/ThirdPersonBP/Test1.umap'
+[2017.05.04-20.42.46:150][347]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/doiser0/Documents/Unreal Projects/proiect_escape_room/Content/ThirdPersonBP/Test1.umap
+[2017.05.04-20.42.46:340][347]LogFileHelpers: Saving map 'Test1' took 4.086
+[2017.05.04-20.42.54:739][347]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.05.04-20.42.56:837][348]Cmd: QUIT_EDITOR
+[2017.05.04-20.42.58:663][348]LogExit: Preparing to exit.
+[2017.05.04-20.43.01:257][348]LogDirectoryWatcher: A directory notification for 'C:/Users/doiser0/Documents/Unreal Projects/proiect_escape_room/Content/' was aborted.
+[2017.05.04-20.43.06:972][348]LogExit: Editor shut down
+[2017.05.04-20.43.07:097][348]LogExit: Transaction tracking system shut down
+[2017.05.04-20.43.16:729][348]LogObj: Freed 0b from 0 cluster array pools.
+[2017.05.04-20.43.16:754][348]LogExit: Object subsystem successfully closed.
+[2017.05.04-20.43.17:658][348]LogD3D11RHI: Shutdown
+[2017.05.04-20.43.17:658][348]LogD3D11RHI: CleanupD3DDevice
+[2017.05.04-20.43.19:939][348]LogD3D11RHI: ~FD3D11DynamicRHI
+[2017.05.04-20.43.20:105][348]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (502)
+[2017.05.04-20.43.20:105][348]LogModuleManager: Shutting down and abandoning module BlueprintGraph (500)
+[2017.05.04-20.43.20:105][348]LogModuleManager: Shutting down and abandoning module BlueprintProfiler (498)
+[2017.05.04-20.43.20:114][348]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (496)
+[2017.05.04-20.43.20:114][348]LogModuleManager: Shutting down and abandoning module CrashTracker (494)
+[2017.05.04-20.43.20:128][348]LogModuleManager: Shutting down and abandoning module SceneOutliner (492)
+[2017.05.04-20.43.20:128][348]LogModuleManager: Shutting down and abandoning module AddContentDialog (490)
+[2017.05.04-20.43.20:146][348]LogDirectoryWatcher: A directory notification for 'C:/Program Files/Epic Games/UE_4.15/FeaturePacks/' was aborted.
+[2017.05.04-20.43.20:793][348]LogModuleManager: Shutting down and abandoning module WidgetCarousel (489)
+[2017.05.04-20.43.20:793][348]LogModuleManager: Shutting down and abandoning module EditorWidgets (486)
+[2017.05.04-20.43.20:793][348]LogModuleManager: Shutting down and abandoning module CollectionManager (484)
+[2017.05.04-20.43.20:793][348]LogDirectoryWatcher: A directory notification for 'C:/Users/doiser0/Documents/Unreal Projects/proiect_escape_room/Content/Collections/' was aborted.
+[2017.05.04-20.43.20:793][348]LogDirectoryWatcher: A directory notification for 'C:/Users/doiser0/Documents/Unreal Projects/proiect_escape_room/Content/Developers/doiser0/Collections/' was aborted.
+[2017.05.04-20.43.20:793][348]LogDirectoryWatcher: A directory notification for 'C:/Users/doiser0/Documents/Unreal Projects/proiect_escape_room/Saved/Collections/' was aborted.
+[2017.05.04-20.43.20:793][348]LogModuleManager: Shutting down and abandoning module StatsViewer (482)
+[2017.05.04-20.43.20:793][348]LogModuleManager: Shutting down and abandoning module FoliageEdit (480)
+[2017.05.04-20.43.20:793][348]LogModuleManager: Shutting down and abandoning module LandscapeEditor (478)
+[2017.05.04-20.43.20:793][348]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (476)
+[2017.05.04-20.43.20:793][348]LogModuleManager: Shutting down and abandoning module ActorPickerMode (474)
+[2017.05.04-20.43.20:793][348]LogModuleManager: Shutting down and abandoning module GeometryMode (472)
+[2017.05.04-20.43.20:793][348]LogModuleManager: Shutting down and abandoning module TextureAlignMode (470)
+[2017.05.04-20.43.20:802][348]LogModuleManager: Shutting down and abandoning module BspMode (468)
+[2017.05.04-20.43.20:803][348]LogModuleManager: Shutting down and abandoning module HardwareSurvey (466)
+[2017.05.04-20.43.20:814][348]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (464)
+[2017.05.04-20.43.20:814][348]LogModuleManager: Shutting down and abandoning module AutomationWorker (462)
+[2017.05.04-20.43.20:814][348]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (460)
+[2017.05.04-20.43.20:814][348]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (458)
+[2017.05.04-20.43.20:816][348]LogModuleManager: Shutting down and abandoning module PlacementMode (457)
+[2017.05.04-20.43.20:825][348]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (454)
+[2017.05.04-20.43.20:825][348]LogModuleManager: Shutting down and abandoning module WmfMediaEditor (452)
+[2017.05.04-20.43.20:825][348]LogModuleManager: Shutting down and abandoning module MfMediaFactory (450)
+[2017.05.04-20.43.20:825][348]LogModuleManager: Shutting down and abandoning module MfMediaEditor (448)
+[2017.05.04-20.43.20:825][348]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (446)
+[2017.05.04-20.43.20:825][348]LogModuleManager: Shutting down and abandoning module AvfMediaEditor (444)
+[2017.05.04-20.43.20:825][348]LogModuleManager: Shutting down and abandoning module AndroidMediaFactory (442)
+[2017.05.04-20.43.20:825][348]LogModuleManager: Shutting down and abandoning module Media (441)
+[2017.05.04-20.43.20:825][348]LogModuleManager: Shutting down and abandoning module AndroidMediaEditor (438)
+[2017.05.04-20.43.20:825][348]LogModuleManager: Shutting down and abandoning module CharacterAI (436)
+[2017.05.04-20.43.20:833][348]LogModuleManager: Shutting down and abandoning module AudioCapture (434)
+[2017.05.04-20.43.20:834][348]LogModuleManager: Shutting down and abandoning module SequenceRecorder (433)
+[2017.05.04-20.43.20:834][348]LogModuleManager: Shutting down and abandoning module SmartSnapping (430)
+[2017.05.04-20.43.20:834][348]LogModuleManager: Shutting down and abandoning module SessionServices (428)
+[2017.05.04-20.43.20:834][348]LogModuleManager: Shutting down and abandoning module ViewportSnapping (426)
+[2017.05.04-20.43.20:841][348]LogModuleManager: Shutting down and abandoning module ViewportInteraction (424)
+[2017.05.04-20.43.20:841][348]LogModuleManager: Shutting down and abandoning module LogVisualizer (422)
+[2017.05.04-20.43.20:847][348]LogModuleManager: Shutting down and abandoning module IntroTutorials (420)
+[2017.05.04-20.43.20:847][348]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (419)
+[2017.05.04-20.43.20:848][348]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (416)
+[2017.05.04-20.43.20:848][348]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (414)
+[2017.05.04-20.43.20:851][348]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (412)
+[2017.05.04-20.43.20:851][348]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (410)
+[2017.05.04-20.43.20:851][348]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (409)
+[2017.05.04-20.43.21:159][348]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (406)
+[2017.05.04-20.43.21:159][348]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (404)
+[2017.05.04-20.43.21:159][348]LogModuleManager: Shutting down and abandoning module InputBindingEditor (402)
+[2017.05.04-20.43.21:171][348]LogModuleManager: Shutting down and abandoning module NiagaraEditor (400)
+[2017.05.04-20.43.21:172][348]LogModuleManager: Shutting down and abandoning module MergeActors (398)
+[2017.05.04-20.43.21:172][348]LogModuleManager: Shutting down and abandoning module SizeMap (396)
+[2017.05.04-20.43.21:173][348]LogModuleManager: Shutting down and abandoning module TreeMap (394)
+[2017.05.04-20.43.21:179][348]LogModuleManager: Shutting down and abandoning module ReferenceViewer (392)
+[2017.05.04-20.43.21:179][348]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (390)
+[2017.05.04-20.43.21:191][348]LogModuleManager: Shutting down and abandoning module LocalizationService (389)
+[2017.05.04-20.43.21:191][348]LogModuleManager: Shutting down and abandoning module HardwareTargeting (386)
+[2017.05.04-20.43.21:191][348]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (384)
+[2017.05.04-20.43.21:202][348]LogModuleManager: Shutting down and abandoning module UndoHistory (382)
+[2017.05.04-20.43.21:202][348]LogModuleManager: Shutting down and abandoning module UserFeedback (380)
+[2017.05.04-20.43.21:202][348]LogModuleManager: Shutting down and abandoning module XmlParser (378)
+[2017.05.04-20.43.21:208][348]LogModuleManager: Shutting down and abandoning module Blutility (376)
+[2017.05.04-20.43.21:208][348]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (374)
+[2017.05.04-20.43.21:208][348]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (373)
+[2017.05.04-20.43.21:234][348]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (370)
+[2017.05.04-20.43.21:235][348]LogModuleManager: Shutting down and abandoning module SettingsEditor (368)
+[2017.05.04-20.43.21:235][348]LogModuleManager: Shutting down and abandoning module ProjectLauncher (366)
+[2017.05.04-20.43.21:235][348]LogModuleManager: Shutting down and abandoning module SessionFrontend (364)
+[2017.05.04-20.43.21:235][348]LogModuleManager: Shutting down and abandoning module ProfilerClient (362)
+[2017.05.04-20.43.21:235][348]LogModuleManager: Shutting down and abandoning module DeviceManager (360)
+[2017.05.04-20.43.21:236][348]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (359)
+[2017.05.04-20.43.21:327][348]LogModuleManager: Shutting down and abandoning module AutomationController (356)
+[2017.05.04-20.43.21:327][348]LogModuleManager: Shutting down and abandoning module AutomationWindow (354)
+[2017.05.04-20.43.21:327][348]LogModuleManager: Shutting down and abandoning module Layers (352)
+[2017.05.04-20.43.21:423][348]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (350)
+[2017.05.04-20.43.21:424][348]LogModuleManager: Shutting down and abandoning module DetailCustomizations (348)
+[2017.05.04-20.43.21:424][348]LogModuleManager: Shutting down and abandoning module PackagesDialog (346)
+[2017.05.04-20.43.21:424][348]LogModuleManager: Shutting down and abandoning module Persona (344)
+[2017.05.04-20.43.21:437][348]LogModuleManager: Shutting down and abandoning module AnimGraph (343)
+[2017.05.04-20.43.21:437][348]LogModuleManager: Shutting down and abandoning module Kismet (340)
+[2017.05.04-20.43.21:792][348]LogModuleManager: Shutting down and abandoning module GraphEditor (338)
+[2017.05.04-20.43.21:792][348]LogModuleManager: Shutting down and abandoning module ClassViewer (336)
+[2017.05.04-20.43.22:038][348]LogModuleManager: Shutting down and abandoning module Toolbox (334)
+[2017.05.04-20.43.22:059][348]LogModuleManager: Shutting down and abandoning module ModuleUI (332)
+[2017.05.04-20.43.22:059][348]LogModuleManager: Shutting down and abandoning module MovieSceneTools (330)
+[2017.05.04-20.43.22:059][348]LogModuleManager: Shutting down and abandoning module OutputLog (328)
+[2017.05.04-20.43.22:059][348]LogModuleManager: Shutting down and abandoning module GammaUI (326)
+[2017.05.04-20.43.22:059][348]LogModuleManager: Shutting down and abandoning module Documentation (324)
+[2017.05.04-20.43.22:108][348]LogModuleManager: Shutting down and abandoning module Niagara (322)
+[2017.05.04-20.43.22:108][348]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (320)
+[2017.05.04-20.43.22:135][348]LogModuleManager: Shutting down and abandoning module AnalyticsET (318)
+[2017.05.04-20.43.22:154][348]LogModuleManager: Shutting down and abandoning module PortalServices (316)
+[2017.05.04-20.43.22:154][348]LogModuleManager: Shutting down and abandoning module PortalRpc (314)
+[2017.05.04-20.43.22:154][348]LogModuleManager: Shutting down and abandoning module MessagingRpc (312)
+[2017.05.04-20.43.22:154][348]LogModuleManager: Shutting down and abandoning module AIModule (310)
+[2017.05.04-20.43.22:180][348]LogModuleManager: Shutting down and abandoning module GameplayDebugger (309)
+[2017.05.04-20.43.22:180][348]LogModuleManager: Shutting down and abandoning module AITestSuite (307)
+[2017.05.04-20.43.22:180][348]LogModuleManager: Shutting down and abandoning module ProfilerService (304)
+[2017.05.04-20.43.22:415][348]LogModuleManager: Shutting down and abandoning module TaskGraph (302)
+[2017.05.04-20.43.22:415][348]LogModuleManager: Shutting down and abandoning module SteamVRController (300)
+[2017.05.04-20.43.22:415][348]LogModuleManager: Shutting down and abandoning module SteamVR (298)
+[2017.05.04-20.43.22:415][348]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponentEditor (296)
+[2017.05.04-20.43.22:435][348]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (294)
+[2017.05.04-20.43.22:435][348]LogModuleManager: Shutting down and abandoning module OculusLibrary (292)
+[2017.05.04-20.43.22:435][348]LogModuleManager: Shutting down and abandoning module OculusInput (290)
+[2017.05.04-20.43.22:435][348]LogModuleManager: Shutting down and abandoning module MobilePatchingUtils (288)
+[2017.05.04-20.43.22:435][348]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (286)
+[2017.05.04-20.43.22:435][348]LogModuleManager: Shutting down and abandoning module CableComponent (284)
+[2017.05.04-20.43.22:435][348]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (282)
+[2017.05.04-20.43.22:435][348]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (278)
+[2017.05.04-20.43.22:436][348]LogModuleManager: Shutting down and abandoning module HTML5Networking (276)
+[2017.05.04-20.43.22:436][348]LogModuleManager: Shutting down and abandoning module AlembicImporter (274)
+[2017.05.04-20.43.22:436][348]LogModuleManager: Shutting down and abandoning module AlembicLibrary (273)
+[2017.05.04-20.43.22:436][348]LogModuleManager: Shutting down and abandoning module GeometryCache (272)
+[2017.05.04-20.43.22:436][348]LogModuleManager: Shutting down and abandoning module GeometryCacheEd (271)
+[2017.05.04-20.43.22:436][348]LogModuleManager: Shutting down and abandoning module SuperSearchEditor (266)
+[2017.05.04-20.43.22:436][348]LogModuleManager: Shutting down and abandoning module SuperSearch (265)
+[2017.05.04-20.43.22:436][348]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (262)
+[2017.05.04-20.43.22:436][348]LogModuleManager: Shutting down and abandoning module PluginBrowser (260)
+[2017.05.04-20.43.22:448][348]LogModuleManager: Shutting down and abandoning module MobileLauncherProfileWizard (258)
+[2017.05.04-20.43.22:449][348]LogModuleManager: Shutting down and abandoning module EpicSurvey (256)
+[2017.05.04-20.43.22:459][348]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (254)
+[2017.05.04-20.43.22:460][348]LogModuleManager: Shutting down and abandoning module DesktopPlatform (253)
+[2017.05.04-20.43.22:460][348]LogModuleManager: Shutting down and abandoning module UObjectPlugin (250)
+[2017.05.04-20.43.22:460][348]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (248)
+[2017.05.04-20.43.22:460][348]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (246)
+[2017.05.04-20.43.22:494][348]LogModuleManager: Shutting down and abandoning module GitSourceControl (244)
+[2017.05.04-20.43.22:494][348]LogModuleManager: Shutting down and abandoning module SourceControl (243)
+[2017.05.04-20.43.22:494][348]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (240)
+[2017.05.04-20.43.22:519][348]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (238)
+[2017.05.04-20.43.22:519][348]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (236)
+[2017.05.04-20.43.22:519][348]LogModuleManager: Shutting down and abandoning module Paper2DEditor (234)
+[2017.05.04-20.43.22:558][348]LogModuleManager: Shutting down and abandoning module MeshPaint (233)
+[2017.05.04-20.43.22:558][348]LogModuleManager: Shutting down and abandoning module LevelEditor (231)
+[2017.05.04-20.43.22:646][348]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (230)
+[2017.05.04-20.43.22:658][348]LogModuleManager: Shutting down and abandoning module MainFrame (228)
+[2017.05.04-20.43.22:675][348]LogModuleManager: Shutting down and abandoning module HotReload (227)
+[2017.05.04-20.43.22:689][348]LogModuleManager: Shutting down and abandoning module ContentBrowser (223)
+[2017.05.04-20.43.22:743][348]LogModuleManager: Shutting down and abandoning module PhysXVehiclesEditor (220)
+[2017.05.04-20.43.22:743][348]LogModuleManager: Shutting down and abandoning module PhysXVehicles (218)
+[2017.05.04-20.43.22:743][348]LogModuleManager: Shutting down and abandoning module LocationServicesBPLibrary (216)
+[2017.05.04-20.43.22:743][348]LogModuleManager: Shutting down and abandoning module UdpMessaging (214)
+[2017.05.04-20.43.22:844][348]LogModuleManager: Shutting down and abandoning module TcpMessaging (212)
+[2017.05.04-20.43.22:944][348]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (210)
+[2017.05.04-20.43.22:944][348]LogModuleManager: Shutting down and abandoning module FacialAnimationEditor (208)
+[2017.05.04-20.43.22:955][348]LogModuleManager: Shutting down and abandoning module FacialAnimation (206)
+[2017.05.04-20.43.22:955][348]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (204)
+[2017.05.04-20.43.22:955][348]LogModuleManager: Shutting down and abandoning module Paper2D (202)
+[2017.05.04-20.43.22:955][348]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (200)
+[2017.05.04-20.43.22:976][348]LogModuleManager: Shutting down and abandoning module WmfMedia (198)
+[2017.05.04-20.43.23:041][348]LogModuleManager: Shutting down and abandoning module MfMedia (196)
+[2017.05.04-20.43.23:041][348]LogModuleManager: Shutting down and abandoning module MediaAssets (194)
+[2017.05.04-20.43.23:041][348]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (192)
+[2017.05.04-20.43.23:041][348]LogModuleManager: Shutting down and abandoning module VREditor (190)
+[2017.05.04-20.43.23:072][348]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (188)
+[2017.05.04-20.43.23:072][348]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (186)
+[2017.05.04-20.43.23:072][348]LogModuleManager: Shutting down and abandoning module FunctionalTesting (184)
+[2017.05.04-20.43.23:072][348]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (182)
+[2017.05.04-20.43.23:094][348]LogModuleManager: Shutting down and abandoning module UMG (180)
+[2017.05.04-20.43.23:145][348]LogModuleManager: Shutting down and abandoning module UMGEditor (179)
+[2017.05.04-20.43.23:145][348]LogModuleManager: Shutting down and abandoning module Sequencer (178)
+[2017.05.04-20.43.23:159][348]LogModuleManager: Shutting down and abandoning module AssetTools (176)
+[2017.05.04-20.43.23:160][348]LogModuleManager: Shutting down and abandoning module MessageLog (175)
+[2017.05.04-20.43.23:160][348]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (174)
+[2017.05.04-20.43.23:160][348]LogModuleManager: Shutting down and abandoning module SlateReflector (168)
+[2017.05.04-20.43.23:160][348]LogModuleManager: Shutting down and abandoning module Slate (166)
+[2017.05.04-20.43.23:160][348]LogModuleManager: Shutting down and abandoning module EditorStyle (164)
+[2017.05.04-20.43.23:298][348]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (162)
+[2017.05.04-20.43.23:316][348]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (160)
+[2017.05.04-20.43.23:316][348]LogModuleManager: Shutting down and abandoning module XAudio2 (158)
+[2017.05.04-20.43.23:316][348]LogModuleManager: Shutting down and abandoning module Networking (156)
+[2017.05.04-20.43.23:338][348]LogModuleManager: Shutting down and abandoning module Core (152)
+[2017.05.04-20.43.23:338][348]LogModuleManager: Shutting down and abandoning module AssetRegistry (150)
+[2017.05.04-20.43.26:646][348]LogDirectoryWatcher: A directory notification for '../../../Engine/Content/' was aborted.
+[2017.05.04-20.43.26:647][348]LogDirectoryWatcher: A directory notification for '../../../../../../Users/doiser0/Documents/Unreal Projects/proiect_escape_room/Content/' was aborted.
+[2017.05.04-20.43.26:647][348]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/2D/Paper2D/Content/' was aborted.
+[2017.05.04-20.43.26:667][348]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (149)
+[2017.05.04-20.43.26:841][348]LogModuleManager: Shutting down and abandoning module KismetCompiler (146)
+[2017.05.04-20.43.26:841][348]LogModuleManager: Shutting down and abandoning module PhysXFormats (144)
+[2017.05.04-20.43.26:841][348]LogModuleManager: Shutting down and abandoning module MeshUtilities (142)
+[2017.05.04-20.43.26:852][348]LogModuleManager: Shutting down and abandoning module SimplygonSwarm (141)
+[2017.05.04-20.43.26:854][348]LogModuleManager: Shutting down and abandoning module SimplygonMeshReduction (139)
+[2017.05.04-20.43.26:855][348]LogModuleManager: Shutting down and abandoning module QuadricMeshReduction (137)
+[2017.05.04-20.43.26:863][348]LogModuleManager: Shutting down and abandoning module PropertyEditor (135)
+[2017.05.04-20.43.26:863][348]LogModuleManager: Shutting down and abandoning module DerivedDataCache (132)
+[2017.05.04-20.43.27:000][348]LogDerivedDataCache: Shutdown
+[2017.05.04-20.43.27:000][348]LogModuleManager: Shutting down and abandoning module TargetPlatform (130)
+[2017.05.04-20.43.27:025][348]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (129)
+[2017.05.04-20.43.27:030][348]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (127)
+[2017.05.04-20.43.27:039][348]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (125)
+[2017.05.04-20.43.27:039][348]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (123)
+[2017.05.04-20.43.27:056][348]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (121)
+[2017.05.04-20.43.27:064][348]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (119)
+[2017.05.04-20.43.27:065][348]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (117)
+[2017.05.04-20.43.27:065][348]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (115)
+[2017.05.04-20.43.27:068][348]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (113)
+[2017.05.04-20.43.27:069][348]LogModuleManager: Shutting down and abandoning module ImageWrapper (112)
+[2017.05.04-20.43.27:069][348]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (109)
+[2017.05.04-20.43.27:069][348]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (107)
+[2017.05.04-20.43.27:070][348]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (105)
+[2017.05.04-20.43.27:070][348]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (103)
+[2017.05.04-20.43.27:070][348]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (101)
+[2017.05.04-20.43.27:080][348]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (99)
+[2017.05.04-20.43.27:080][348]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (97)
+[2017.05.04-20.43.27:080][348]LogModuleManager: Shutting down and abandoning module LinuxClientTargetPlatform (95)
+[2017.05.04-20.43.27:091][348]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (93)
+[2017.05.04-20.43.27:091][348]LogModuleManager: Shutting down and abandoning module Messaging (91)
+[2017.05.04-20.43.27:108][348]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (89)
+[2017.05.04-20.43.27:121][348]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (87)
+[2017.05.04-20.43.27:136][348]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (85)
+[2017.05.04-20.43.27:136][348]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (83)
+[2017.05.04-20.43.27:136][348]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (81)
+[2017.05.04-20.43.27:136][348]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (79)
+[2017.05.04-20.43.27:154][348]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (77)
+[2017.05.04-20.43.27:155][348]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (75)
+[2017.05.04-20.43.27:155][348]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (73)
+[2017.05.04-20.43.27:155][348]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (71)
+[2017.05.04-20.43.27:155][348]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (69)
+[2017.05.04-20.43.27:155][348]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (67)
+[2017.05.04-20.43.27:180][348]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (65)
+[2017.05.04-20.43.27:180][348]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (63)
+[2017.05.04-20.43.27:180][348]LogModuleManager: Shutting down and abandoning module MacTargetPlatform (61)
+[2017.05.04-20.43.27:210][348]LogModuleManager: Shutting down and abandoning module MacServerTargetPlatform (59)
+[2017.05.04-20.43.27:210][348]LogModuleManager: Shutting down and abandoning module MacNoEditorTargetPlatform (57)
+[2017.05.04-20.43.27:211][348]LogModuleManager: Shutting down and abandoning module MacClientTargetPlatform (55)
+[2017.05.04-20.43.27:225][348]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (53)
+[2017.05.04-20.43.27:225][348]LogModuleManager: Shutting down and abandoning module InputCore (50)
+[2017.05.04-20.43.27:226][348]LogModuleManager: Shutting down and abandoning module Settings (48)
+[2017.05.04-20.43.27:226][348]LogModuleManager: Shutting down and abandoning module OculusRift (46)
+[2017.05.04-20.43.27:226][348]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (44)
+[2017.05.04-20.43.27:241][348]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (42)
+[2017.05.04-20.43.27:241][348]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (38)
+[2017.05.04-20.43.27:241][348]LogOnline:Display: Unloading online subsystem: NULL
+[2017.05.04-20.43.27:250][348]LogModuleManager: Shutting down and abandoning module XMPP (37)
+[2017.05.04-20.43.27:267][348]LogModuleManager: Shutting down and abandoning module HTTP (35)
+[2017.05.04-20.43.27:267][348]LogHttp:Display: Http module shutting down, but needs to wait on 1 outstanding Http requests:
+[2017.05.04-20.43.27:267][348]LogHttp:Display: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7BF775B228-4E71-5F50-7B4F-D7B088BA6AA3%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.15.0-3299760%2B%2B%2BUE4%2BRelease-4.15&UserID=96459276441cdc814aaf529e9652770a%7Cfd5a0ab5f04e4a1da216b18f30ec9c38%7Cc385839b-22c6-4150-be96-8b4e5a79a40d&AppEnvironment=datacollector-binary&UploadType=eteventstream] status=Processing
+[2017.05.04-20.43.27:437][348]LogModuleManager: Shutting down and abandoning module SSL (34)
+[2017.05.04-20.43.27:717][348]LogModuleManager: Shutting down and abandoning module AudioEditor (30)
+[2017.05.04-20.43.27:733][348]LogModuleManager: Shutting down and abandoning module TextureCompressor (28)
+[2017.05.04-20.43.27:826][348]LogModuleManager: Shutting down and abandoning module ShaderCore (26)
+[2017.05.04-20.43.27:826][348]LogModuleManager: Shutting down and abandoning module Landscape (24)
+[2017.05.04-20.43.27:826][348]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (22)
+[2017.05.04-20.43.28:474][348]LogModuleManager: Shutting down and abandoning module OpenGLDrv (20)
+[2017.05.04-20.43.28:474][348]LogModuleManager: Shutting down and abandoning module D3D11RHI (18)
+[2017.05.04-20.43.28:474][348]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (16)
+[2017.05.04-20.43.28:474][348]LogModuleManager: Shutting down and abandoning module Renderer (14)
+[2017.05.04-20.43.28:474][348]LogModuleManager: Shutting down and abandoning module Engine (12)
+[2017.05.04-20.43.28:474][348]LogModuleManager: Shutting down and abandoning module CoreUObject (10)
+[2017.05.04-20.43.28:474][348]LogModuleManager: Shutting down and abandoning module NetworkFile (8)
+[2017.05.04-20.43.28:490][348]LogModuleManager: Shutting down and abandoning module StreamingFile (6)
+[2017.05.04-20.43.28:490][348]LogModuleManager: Shutting down and abandoning module SandboxFile (4)
+[2017.05.04-20.43.28:490][348]LogModuleManager: Shutting down and abandoning module PakFile (2)
+[2017.05.04-20.43.28:646][348]LogExit: Exiting.
+[2017.05.04-20.43.30:165][348]Log file closed, 05/04/17 23:43:30
